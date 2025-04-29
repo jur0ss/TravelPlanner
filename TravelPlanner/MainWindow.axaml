@@ -9,6 +9,7 @@
     
     <Grid HorizontalAlignment="Center">
         
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
@@ -25,15 +26,24 @@
             <ColumnDefinition Width="Auto"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         
+        
         <TextBlock Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="2" Text="Planer podróży" FontSize="30" Margin="0,0,0,30"></TextBlock>
         
         <TextBlock Grid.Row="1" Grid.Column="0" Text="Imię i nazwisko:" VerticalAlignment="Center"></TextBlock>
-        <TextBox Grid.Row="1" Grid.Column="1"></TextBox>
+        <TextBox Grid.Row="1" Grid.Column="1" Name="TextBox"></TextBox>
         
-        <TextBlock Grid.Row="2" Grid.Column="0" Text="Kraj docelowy" VerticalAlignment="Center"></TextBlock>
-        <ComboBox Grid.Row="2" Grid.Column="1"></ComboBox>
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Kraj docelowy:" VerticalAlignment="Center"></TextBlock>
+        <ComboBox Grid.Row="2" Grid.Column="1" Name="ComboBox">
+            <ComboBoxItem Content="Włochy"/>
+            <ComboBoxItem Content="USA"/>
+            <ComboBoxItem Content="Kanada"/>
+            <ComboBoxItem Content="Hiszpania"/>
+        </ComboBox>
         
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="Atrakcje:" VerticalAlignment="Center"></TextBlock>
+        <CheckBox Grid.Row="3" Grid.Column="1" Name="CheckBox"></CheckBox>
         
+
     </Grid>
 
     
