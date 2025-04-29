@@ -5,5 +5,36 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="TravelPlanner.MainWindow"
         Title="TravelPlanner">
-    Welcome to Avalonia!
+    
+    
+    <Grid HorizontalAlignment="Center">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <TextBlock Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="2" Text="Planer podróży" FontSize="30" Margin="0,0,0,30"></TextBlock>
+        
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Imię i nazwisko:" VerticalAlignment="Center"></TextBlock>
+        <TextBox Grid.Row="1" Grid.Column="1"></TextBox>
+        
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Kraj docelowy" VerticalAlignment="Center"></TextBlock>
+        <ComboBox Grid.Row="2" Grid.Column="1"></ComboBox>
+        
+        
+    </Grid>
+
+    
 </Window>
