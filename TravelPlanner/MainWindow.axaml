@@ -7,10 +7,15 @@
         Title="TravelPlanner">
     
     
+    
     <Grid HorizontalAlignment="Center">
         
-        
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
@@ -41,7 +46,18 @@
         </ComboBox>
         
         <TextBlock Grid.Row="3" Grid.Column="0" Text="Atrakcje:" VerticalAlignment="Center"></TextBlock>
-        <CheckBox Grid.Row="3" Grid.Column="1" Name="CheckBox"></CheckBox>
+        <CheckBox Grid.Row="3" Grid.Column="1" Content="Muzea" Name="CheckBox"></CheckBox>
+        <CheckBox Grid.Row="4" Grid.Column="1" Content="Parki Narodowe" Name="CheckBox2"></CheckBox>
+        <CheckBox Grid.Row="5" Grid.Column="1" Content="Zabytki" Name="CheckBox3"></CheckBox>
+        <CheckBox Grid.Row="6" Grid.Column="1" Content="Restauracje" Name="CheckBox4"></CheckBox>
+        <CheckBox Grid.Row="7" Grid.Column="1" Content="Galerie sztuki" Name="CheckBox5"></CheckBox>
+        <CheckBox Grid.Row="8" Grid.Column="1" Content="Festiwale i koncerty" Name="CheckBox6"></CheckBox>
+        
+        <TextBlock Grid.Row="9" Grid.Column="0" Text="Transport:" VerticalAlignment="Center"></TextBlock>
+        <RadioButton Grid.Row="9" Grid.Column="1" Content="Samolot" GroupName="Transport"/>
+        <RadioButton Grid.Row="10" Grid.Column="1" Content="Samochód" GroupName="Transport"/>
+        <RadioButton Grid.Row="11" Grid.Column="1" Content="Pociąg" GroupName="Transport"/>
+        <RadioButton Grid.Row="12" Grid.Column="1" Content="Statek" GroupName="Transport"/>
         
 
     </Grid>
