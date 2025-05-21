@@ -26,6 +26,10 @@
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
         
         <Grid.ColumnDefinitions>
@@ -37,14 +41,16 @@
         <TextBlock Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="2" Text="Planer podróży" FontSize="30" Margin="0,0,0,30" HorizontalAlignment="Center"></TextBlock>
         
         <TextBlock Grid.Row="1" Grid.Column="0" Text="Imię i nazwisko:" VerticalAlignment="Center"></TextBlock>
-        <TextBox Grid.Row="1" Grid.Column="1" Name="TextBox" ></TextBox>
+        <TextBox Grid.Row="1" Grid.Column="1" Name="TextBox" HorizontalAlignment="Center" ></TextBox>
         
         <TextBlock Grid.Row="2" Grid.Column="0" Text="Kraj docelowy:" VerticalAlignment="Center"></TextBlock>
-        <ComboBox Grid.Row="2" Grid.Column="1" Name="ComboBox">
+        <ComboBox Grid.Row="2" Grid.Column="1" Name="ComboBox" HorizontalAlignment="Center">
             <ComboBoxItem Content="Włochy"/>
             <ComboBoxItem Content="USA"/>
             <ComboBoxItem Content="Kanada"/>
             <ComboBoxItem Content="Hiszpania"/>
+            <ComboBoxItem Content="Niemcy"/>
+            <ComboBoxItem Content="Japonia"/>
         </ComboBox>
         
         <TextBlock Grid.Row="3" Grid.Column="0" Text="Atrakcje:" VerticalAlignment="Center"></TextBlock>
@@ -62,12 +68,16 @@
         <RadioButton Grid.Row="12" Grid.Column="1" Content="Statek" GroupName="Transport"/>
         
         
-        <TextBlock Grid.Row="13" Grid.Column="0" Text="Wpisz miasto:" VerticalAlignment="Center"></TextBlock>
-        <TextBox Grid.Row="13" Grid.Column="1"></TextBox>
+        <TextBlock Grid.Row="13" Grid.Column="0" Text="Wpisz miasto:" VerticalAlignment="Center" ></TextBlock>
+        <TextBox Grid.Row="13" Grid.Column="1" Name="CityTextBox"></TextBox>
         
         <Button Grid.Row="14" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Content="Dodaj" Name="AddCityButton"></Button>
         
-        <ListBox Grid.Row="15" Grid.Column="0" Grid.ColumnSpan="2" Name="CityListBox"></ListBox>
+        <ListBox Grid.Row="15" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Name="CityListBox"></ListBox>
+        
+        <Image Grid.Row="16" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Name="CountryImage"></Image>
+        
+        <Button Grid.Row="17" Grid.Column="0" Grid.ColumnSpan="2" Margin="0,100,0,0" HorizontalAlignment="Center" Content="Pokaż szczegóły podróży" Name="SubmitButton"></Button>
         
 
     </Grid>

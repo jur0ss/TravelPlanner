@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelPlanner", "TravelPlanner\TravelPlanner.csproj", "{ED371E01-5A84-4636-BE2B-BFB39A41E7FB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assets", "Assets", "{BC813C0C-97BE-4074-8DC1-B1E1A5FB9F41}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{2D6B9563-322E-47D3-8F47-43E7E4BE9A44}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,8 @@ Global
 		{ED371E01-5A84-4636-BE2B-BFB39A41E7FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED371E01-5A84-4636-BE2B-BFB39A41E7FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED371E01-5A84-4636-BE2B-BFB39A41E7FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2D6B9563-322E-47D3-8F47-43E7E4BE9A44} = {BC813C0C-97BE-4074-8DC1-B1E1A5FB9F41}
 	EndGlobalSection
 EndGlobal
